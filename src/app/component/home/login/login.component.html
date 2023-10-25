@@ -1,0 +1,36 @@
+
+
+<div class="content">
+  <div class="container">
+
+      <img src="/assets/img/bodyguard2.svg" class="container__img" alt="Bodyguards on street">
+
+      <div class="container__form">
+
+        <div class="logo">
+          <img src="/assets/img/BODY_FONDo_NARANJA.png" alt="Bodyguard logo with background orange">
+          <p>Wellcome  back  you’ve been missed</p>
+        </div>
+        <form class="formulario" [formGroup]="form" (submit)="submit()"  action="#">
+          <mat-form-field class="campo" >
+                <mat-label>Email</mat-label>
+                <input matInput  placeholder="Enter your email" formControlName="email"/>
+          </mat-form-field>
+
+          <mat-form-field class="campo">
+            <mat-label>Password</mat-label>
+            <input matInput  placeholder="Password" formControlName="password"/>
+          </mat-form-field>
+
+          <span class="link"> Recovery password</span>
+          <button class="btn" type="submit"  >Log in</button>
+          <button class="btn" mat-flat-button color="warn" type="button" (click)="removeLocalStorage()" >Remove local storage</button>
+          <p>Not a memeber? <span class="link" href="#">Register now</span></p>
+          <p style="color: red;" >{{message}}</p>
+        </form>
+
+      </div>
+
+  </div>
+</div>
+<router-outlet></router-outlet>

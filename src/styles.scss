@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+html{
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
+body{
+  font-family: Roboto;
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
+
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
